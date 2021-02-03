@@ -1,0 +1,22 @@
+.textField-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.textField-container label{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.textField-container input{
+    width: 97%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-align: center;
+}
