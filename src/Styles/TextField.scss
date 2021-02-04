@@ -1,9 +1,8 @@
+@import './Presets/Mixins.scss';
+
 .textField-container {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexCenterColumn;
     text-align: center;
     padding: 10px;
 }

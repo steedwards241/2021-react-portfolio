@@ -1,7 +1,6 @@
+@import './Presets/Mixins.scss';
+
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexCenterColumn;
     padding: 20px;
 }

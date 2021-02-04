@@ -1,14 +1,15 @@
+@import './Presets/Variables.scss';
+@import './Presets/Mixins.scss';
+
 .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenterColumn;
     text-align: center;
     padding: 10px;
 }
 
 .button-container button {
-    background-color: black;
-    color: white;
+    background-color: $secondary;
+    color: $tertiary;
     border-radius: 5%;
     padding: 7px 10px;
     font-family: 'Courier New', Courier, monospace;

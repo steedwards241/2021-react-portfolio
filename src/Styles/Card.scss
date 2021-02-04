@@ -1,9 +1,9 @@
+@import './Presets/Variables.scss';
+@import './Presets/Mixins.scss';
+
 .card-container {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px black;
+    @include flexCenterColumn;
+    border: solid 1px $secondary;
     padding-bottom: 20px;
 }
