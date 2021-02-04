@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Button.css';
+import '../Styles/Button.scss';
 
 const Button = (props) => {
     return (

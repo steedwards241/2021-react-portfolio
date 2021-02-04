@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Card.css';
+import '../Styles/Card.scss';
 
 const Card = (props) => {
     return (

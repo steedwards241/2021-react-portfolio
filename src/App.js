@@ -1,6 +1,6 @@
 import './App.css';
 
-import Form from './Screens/Form/Form';
+import Form from './Pages/Form';
 
 const App = () => {
   return (

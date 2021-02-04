@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Card from '../../Components/Card/Card';
-import TextField from '../../Components/TextField/TextField';
-import Button from '../../Components/Button/Button';
+import Card from '../Components/Card';
+import TextField from '../Components/TextField';
+import Button from '../Components/Button';
 
-import './Form.scss';
+import '../Styles/Form.scss';
 
 const Form = () => {
 
