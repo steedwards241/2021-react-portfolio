@@ -2,16 +2,25 @@
 @import './Presets/Mixins.scss';
 
 .button-container {
-    @include flexCenterColumn;
-    text-align: center;
+    @include flexCenter(100%, row, center);
     padding: 10px;
 }
 
 .button-container button {
-    background-color: $secondary;
-    color: $tertiary;
+    color: $secondaryColor;
+    font-family: $primaryFont;
+    background-color: $primaryColor;
+    border: solid 1px $primaryColor;
     border-radius: 5%;
     padding: 7px 10px;
-    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
+}
+
+.button-container button:hover {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 8px 0px;
+}
+
+.on button {
+    background-color: $primaryColor;
+    color: $secondaryColor;
 }

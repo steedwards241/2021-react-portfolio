@@ -1,9 +1,14 @@
 @import './Presets/Variables.scss';
 @import './Presets/Mixins.scss';
 
-.card-container {
-    width: 40%;
-    @include flexCenterColumn;
-    border: solid 1px $secondary;
+.card-container{
+    @include flexCenter(40%, column, center);
+    border: solid 1px $primaryColor;
+    border-radius: 5%;
     padding-bottom: 20px;
 }
+/*
+.darkMode div{
+    background-color: $primaryColor;
+}
+*/

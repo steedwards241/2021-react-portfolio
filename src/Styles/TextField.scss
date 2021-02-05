@@ -1,21 +1,23 @@
+@import './Presets/Variables.scss';
 @import './Presets/Mixins.scss';
 
-.textField-container {
-    width: 40%;
-    @include flexCenterColumn;
+@mixin textField($width, $fontSize) {
+    width: $width;
+    font-family: $primaryFont;
+    font-size: $fontSize;
     text-align: center;
+}
+
+.textField-container {
+    @include flexCenter(40%, column, center);
     padding: 10px;
 }
 
-.textField-container label{
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+.textField-container label {
+    @include textField(100%, 16px);
+    padding-bottom: 5px;
 }
 
-.textField-container input{
-    width: 97%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    text-align: center;
+.textField-container input {
+    @include textField(100%, 12px);
 }

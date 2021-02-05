@@ -1,6 +1,12 @@
+@import './Presets/Variables.scss';
 @import './Presets/Mixins.scss';
 
 .form-container {
-    @include flexCenterColumn;
+    @include flexCenter(100%, row, center);
+    font-family: $secondaryFont;
     padding: 20px;
+}
+
+.darkMode h1 {
+    color: $secondaryColor;
 }
