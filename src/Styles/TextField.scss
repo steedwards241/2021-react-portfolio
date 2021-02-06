@@ -9,7 +9,7 @@
 }
 
 .textField-container {
-    @include flexCenter(40%, column, center);
+    @include flexCenter(100%, column, center);
     padding: 10px;
 }
 
@@ -20,4 +20,8 @@
 
 .textField-container input {
     @include textField(100%, 12px);
+}
+
+.dark label {
+    color: $secondaryColor;
 }

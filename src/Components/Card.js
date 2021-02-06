@@ -4,8 +4,8 @@ import '../Styles/Card.scss';
 
 const Card = (props) => {
 
-    const darkMode = props.darkMode;
-    const style = `card-container ${darkMode}`;
+    const mode = props.mode;
+    const style = `card-container ${mode}`;
 
     return (
         <div className={style}>

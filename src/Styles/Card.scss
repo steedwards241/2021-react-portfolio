@@ -4,11 +4,10 @@
 .card-container{
     @include flexCenter(40%, column, center);
     border: solid 1px $primaryColor;
-    border-radius: 5%;
+    border-radius: 2%;
     padding-bottom: 20px;
 }
-/*
-.darkMode div{
+
+.dark div{
     background-color: $primaryColor;
 }
-*/

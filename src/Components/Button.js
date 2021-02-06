@@ -4,8 +4,8 @@ import '../Styles/Button.scss';
 
 const Button = (props) => {
 
-    const darkMode = props.darkMode;
-    const style = `button-container ${darkMode}`;
+    const mode = props.mode;
+    const style = `button-container ${mode}`;
 
     return (
         <div className={style}>

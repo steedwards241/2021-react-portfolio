@@ -20,7 +20,7 @@
     box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 8px 0px;
 }
 
-.on button {
-    background-color: $primaryColor;
-    color: $secondaryColor;
+.dark button {
+    background-color: $secondaryColor;
+    color: $primaryColor;
 }
