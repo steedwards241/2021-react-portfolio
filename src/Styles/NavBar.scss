@@ -1,0 +1,16 @@
+@import './Presets/Variables.scss';
+@import './Presets/Mixins.scss';
+
+.navbar-container {
+    @include flexCenter(100%, column, center);
+}
+
+.navbar-container ul {
+    @include flexCenter(80%, row, center);
+}
+
+.navbar-container li {
+    padding: 10px 20px;
+    border: solid 1px $primaryColor;
+    cursor: pointer;
+}
