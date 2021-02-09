@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../Styles/NavBar.scss';
 
@@ -11,10 +12,10 @@ const NavBar = (props) => {
     return (
         <div className="navbar-container">
             <ul>
-                <li style={style}>{props.item1}</li>
-                <li style={style}>{props.item2}</li>
-                <li style={style}>{props.item3}</li>
-                <li style={style}>{props.item4}</li>
+                <Link to="/"><li style={style}>{props.item1}</li></Link>
+                <Link to="/about"><li style={style}>{props.item2}</li></Link>
+                <Link to="/contact"><li style={style}>{props.item3}</li></Link>
+                <Link to="/socials"><li style={style}>{props.item4}</li></Link>
             </ul>
         </div>
     )
