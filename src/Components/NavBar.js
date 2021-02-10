@@ -12,8 +12,8 @@ const NavBar = (props) => {
     return (
         <div className="navbar-container">
             <ul>
-                <Link to="/"><li style={style}>{props.item1}</li></Link>
-                <Link to="/about"><li style={style}>{props.item2}</li></Link>
+                <Link to="/login"><li style={style}>{props.item1}</li></Link>
+                <Link to="/instagram"><li style={style}>{props.item2}</li></Link>
                 <Link to="/contact"><li style={style}>{props.item3}</li></Link>
                 <Link to="/socials"><li style={style}>{props.item4}</li></Link>
             </ul>

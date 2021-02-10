@@ -1,0 +1,85 @@
+@import './Presets/Variables.scss';
+@import './Presets/Mixins.scss';
+
+.header-container {
+    @include flexCenter(100.7%, row, center);
+    height: 54px;
+    border-bottom: solid #dcdcdc 1px;
+    border-width: 200%;
+    margin: -9px 0px 0px -10px;
+    background-color: white;
+}
+
+.header-logo-container {
+    @include flexCenter(360px, row, center);
+    height: 36px;
+    margin: 8px 0px 0px 22px;
+}
+
+.header-logo-container img{
+    height: 28.8px;
+    width: 103px;
+}
+
+
+
+
+.searchBar-Container {
+    @include flexCenter(215px, row, center);
+    height: 28px;
+    margin: 5px 4px 0px -2px;
+}
+
+.searchBar-Container input {
+    text-align: center;
+    height: 28px;
+    width: 215px;
+    margin: -3px 0px 0px -4px;
+}
+
+.searchBar {
+    background-image: url('http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png');
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: 32% 50%;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.searchBar:focus {
+    text-align: left;
+    text-indent: 15%;
+    background: url('http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png') left no-repeat;
+    background-size: 7%;
+    background-position: 10px;
+}
+
+.searchBar-Container img {
+    height: 20px;
+    width: 20px;
+    margin: -2px 0px 0px -30px;
+}
+
+
+
+
+.navBar-container {
+    height: 24px;
+    width: 360px;
+    margin: 0 -5px 0 0;
+}
+
+.navBar-container img {
+    height: 24px;
+    float: right;
+    width: 24px;
+    margin: 0 19px 0 0;
+}
+
+#user {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+}

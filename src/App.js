@@ -3,17 +3,19 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Authentication from './Pages/Authentication';
 import NavBar from './Components/NavBar';
+import Instagram from './Pages/Instagram';
 
 const App = () => {
   return (
     <div className="app-container">
       <Router>
+        <NavBar item1="Login" item2="Instagram Mockup" item3="Contact" item4="Socials"/>
         <Switch>
-          <Route path="/" exact>
-            <Authentication />
+          <Route path="/instagram" exact>
+            <Instagram />
           </Route>
-          <Route path="/home">
-            <NavBar item1="Home" item2="About" item3="Contact" item4="Socials"/>
+          <Route path="/login">
+            <Authentication />
           </Route>
         </Switch>
       </Router>
