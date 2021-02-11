@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Card from '../Components/Card';
-import TextField from '../Components/TextField';
-import Button from '../Components/Button';
+import Card from '../Components/Login/Card';
+import TextField from '../Components/Login/TextField';
+import Button from '../Components/Login/Button';
 
 import '../Styles/Authentication.scss';
 

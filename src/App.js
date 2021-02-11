@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Authentication from './Pages/Authentication';
-import NavBar from './Components/NavBar';
+import NavBar from './Pages/NavBar';
 import Instagram from './Pages/Instagram';
+import Authentication from './Pages/Authentication';
 
 const App = () => {
   return (
