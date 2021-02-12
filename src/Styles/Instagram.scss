@@ -133,3 +133,117 @@
     border-radius: 100%;
     border: solid 5px #d22b82;
 }
+
+
+
+
+
+
+.IGPost-wrapper {
+    @include flexCenter(100%, column, center);
+    padding-top: 30px;
+}
+
+.IGPost-container {
+    @include flexCenter(595px, column, center);
+    border: solid 1px #ddd;
+    border-radius: 0.5%;
+    background-color: white
+}
+
+.IGPost-header {
+    @include flexCenter(100%, row, center);
+    height: 60px;
+}
+
+.IGPost-header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    padding: 0px 20px;
+}
+
+.IGPost-header-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.IGPost-image img {
+    width: 595px;
+    height: 595px;
+}
+
+.IGPost-icons {
+    @include flexCenter(100%, row, center);
+    height: 60px;
+}
+
+.IGPost-icons img {
+    width: 28px;
+    height: 28px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.IGPost-icons-stretched {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.IGPost-comment {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.IGPost-container h5 {
+    font-weight: lighter;
+    margin-bottom: -15px;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#timePost {
+    width: 102%;
+    margin: 25px 0px 0px -12px;
+    padding: 0px 0px 10px 12px;
+    border-bottom: solid 1px #ddd;
+    color: #aaa;
+    font-size: 10px;
+}
+
+#post {
+    color: #cef;
+}
+
+.IGPost-contentBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 94%;
+    height: 235px;
+    margin-top: -25px;
+}
+
+.IGPost-userPost {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.IGPost-addComment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px 0px 0px;
+    color: #aaa;
+}
