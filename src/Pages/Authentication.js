@@ -7,7 +7,14 @@ import Button from '../Components/Login/Button';
 
 import '../Styles/Authentication.scss';
 
+/*
+TODO:
+Username/Password Validation
+Set Username/Password
+*/
+
 const Authentication = (props) => {
+    //entered username/password stored in state per change
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 

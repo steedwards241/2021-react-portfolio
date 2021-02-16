@@ -1,0 +1,39 @@
+@import './Presets/Variables.scss';
+@import './Presets/Mixins.scss';
+
+.netflix-container {
+    background-color: #141414;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 80vh;
+}
+
+.netflix-navBar-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 10%;
+}
+
+.netflix-navBar-container img {
+    width: 10%;
+    margin: 0px 1%;
+}
+
+.netflix-navBar-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.netflix-navBar-link:hover {
+    color: #8a8d8e;
+}
+
+.netflix-navBar-active {
+    color: #c9c6c3;
+}
+
+.netflix-navBar-active:hover {
+    color: #c9c6c3;
+}

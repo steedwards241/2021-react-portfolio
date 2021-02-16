@@ -6,6 +6,15 @@ import IGPost from '../Components/Instagram/IGPost';
 
 import '../Styles/Instagram.scss';
 
+/*
+TODO:
+Interactive Stories
+3 Dots Options
+Heart Button
+View Comments
+Add Comments 
+*/
+
 const Instagram = () => {
     return (
         <div>
