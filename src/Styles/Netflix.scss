@@ -37,3 +37,56 @@
 .netflix-navBar-active:hover {
     color: #c9c6c3;
 }
+
+
+
+
+
+.panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 11%;
+    height: 100px;
+    margin: 40px 2px 0px 2px;
+    cursor: pointer;
+}
+
+.panel-container-image img {
+    width: 100%;
+}
+
+.panel-container-content h1 {
+    margin: 0px;
+    color: white;
+    font-size: 100%;
+}
+
+.panel-container-content p {
+    margin: 0px;
+    color: white;
+    font-size: 80%;
+}
+
+
+
+
+.netflix-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.netflix-header {
+    color: white;
+    margin-left: 20px;
+}
+
+.netflix-page-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
