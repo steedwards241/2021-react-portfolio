@@ -10,8 +10,10 @@ const App = () => {
   return (
     <div className="app-container">
       <Router>
-        <NavBar />
         <Switch>
+          <Route path="/" exact>
+            <NavBar />
+          </Route>
           <Route path="/instagram" exact>
             <Instagram />
           </Route>

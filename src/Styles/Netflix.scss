@@ -1,92 +1,102 @@
 @import './Presets/Variables.scss';
 @import './Presets/Mixins.scss';
 
+//Netflix
+
 .netflix-container {
     background-color: #141414;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 80vh;
+    height: 120vh;
+    margin: -30px -8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+//NavBar
+
 .netflix-navBar-container {
+    @include netflixNavBar(transparent);
+    @include navBarTransition(0.2s);
+}
+
+.netflix-navBar-container__scroll {
+    @include netflixNavBar(#141414);
+    @include navBarTransition(0.2s);
+}
+
+.netflix-navBar-left {
     display: flex;
-    flex-direction: row;
-    width: 100%;
     align-items: center;
-    height: 10%;
+    width: 50%;
 }
 
 .netflix-navBar-container img {
-    width: 10%;
-    margin: 0px 1%;
+    width: 14%;
+}
+
+.netflix-navBar-container__scroll img {
+    width: 14%;
 }
 
 .netflix-navBar-link {
-    color: #ffffff;
     text-decoration: none;
+    color: rgb(219, 219, 219);
     padding: 0px 10px;
 }
 
 .netflix-navBar-link:hover {
-    color: #8a8d8e;
+    color: rgb(180, 180, 180);
 }
 
 .netflix-navBar-active {
-    color: #c9c6c3;
+    color: white;
 }
 
 .netflix-navBar-active:hover {
-    color: #c9c6c3;
+    color: white;
 }
 
 
-
-
-
-.panel-container {
+.netflix-navBar-right {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 11%;
+    justify-content: flex-end;
+    width: 50%;
+    color: white;
+}
+
+.netflix-navBar-right img {
+    width: 3%;
+    margin: 0px 15px;
+}
+
+.netflix-navBar-right p {
+    margin: 0px 10px;
+}
+
+.netflix-navBar-profile {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.netflix-navBar-profile img {
+    margin: 0px 4px;
+}
+
+#profile_image {
+    width: 20%
+}
+
+#profile_arrow {
+    width: 7%;
+}
+
+
+//Netflix Pages
+
+.netflix-pages-header {
     height: 100px;
-    margin: 40px 2px 0px 2px;
-    cursor: pointer;
 }
 
-.panel-container-image img {
-    width: 100%;
-}
-
-.panel-container-content h1 {
-    margin: 0px;
-    color: white;
-    font-size: 100%;
-}
-
-.panel-container-content p {
-    margin: 0px;
-    color: white;
-    font-size: 80%;
-}
-
-
-
-
-.netflix-page-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.netflix-header {
-    color: white;
-    margin-left: 20px;
-}
-
-.netflix-page-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+.netflix-pages-content {
+    color: lightgrey;
 }

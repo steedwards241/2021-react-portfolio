@@ -6,3 +6,21 @@
     align-items: center;
     text-align: $textAlign;
 }
+
+@mixin navBarTransition($time) {
+    -webkit-transition: all $time linear;
+    -moz-transition: all $time linear;
+    -o-transition: all $time linear;
+    transition: all $time linear;
+}
+
+@mixin netflixNavBar($background) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $background;
+    position: fixed;
+    top: 0;
+    font-size: 14px;
+    padding-left: 50px;
+}
