@@ -25,7 +25,7 @@
 .netflix-navBar-left {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 80%;
 }
 
 .netflix-navBar-container img {
@@ -40,6 +40,8 @@
     text-decoration: none;
     color: rgb(219, 219, 219);
     padding: 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .netflix-navBar-link:hover {
