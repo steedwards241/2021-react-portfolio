@@ -2,7 +2,7 @@
 @import './Presets/Mixins.scss';
 
 .header-container {
-    @include flexCenter(100.7%, row, center);
+    @include flex(100.7%, row, center, center, center);
     height: 54px;
     border-bottom: solid #dcdcdc 1px;
     border-width: 200%;
@@ -11,7 +11,7 @@
 }
 
 .header-logo-container {
-    @include flexCenter(360px, row, center);
+    @include flex(360px, row, center, center, center);
     height: 36px;
     margin: 8px 0px 0px 22px;
 }
@@ -25,15 +25,15 @@
 
 
 .searchBar-Container {
-    @include flexCenter(215px, row, center);
+    @include flex(215px, row, center, center, center);
     height: 28px;
     margin: 5px 4px 0px -2px;
 }
 
 .searchBar-Container input {
     text-align: center;
-    height: 28px;
     width: 215px;
+    height: 28px;
     margin: -3px 0px 0px -4px;
 }
 
@@ -65,13 +65,13 @@
 
 
 
-.navBar-container {
+.IG-navBar-container {
     height: 24px;
     width: 360px;
     margin: 0 -5px 0 0;
 }
 
-.navBar-container img {
+.IG-navBar-container img {
     height: 24px;
     float: right;
     width: 24px;
@@ -103,7 +103,7 @@
 }
 
 .story-banner-container .story-container {
-    @include flexCenter(100%, column, center);
+    @include flex(100%, column, center, center, center);
     margin-right: -12px;
     cursor: pointer;
 }
@@ -116,7 +116,7 @@
 }
 
 .story-banner-container .story-container img {
-    @include flexCenter(55px, row, center);
+    @include flex(55px, row, center, center, center);
     min-width: 55px;
     height: 55px;
     line-height: 110px;
@@ -127,7 +127,7 @@
 }
 
 .story-image-container {
-    @include flexCenter(55px, row, center);
+    @include flex(55px, row, center, center, center);
     height: 55px;
     margin: 10px 12px -12px 15px;
     border-radius: 100%;
@@ -140,19 +140,19 @@
 
 
 .IGPost-wrapper {
-    @include flexCenter(100%, column, center);
+    @include flex(100%, column, center, center, center);
     padding-top: 30px;
 }
 
 .IGPost-container {
-    @include flexCenter(595px, column, center);
+    @include flex(595px, column, center, center, center);
     border: solid 1px #ddd;
     border-radius: 0.5%;
     background-color: white
 }
 
 .IGPost-header {
-    @include flexCenter(100%, row, center);
+    @include flex(100%, row, center, center, center);
     height: 60px;
 }
 
@@ -167,8 +167,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding-right: 20px;
+    font-family: $primaryFont;
 }
 
 .IGPost-image img {
@@ -177,7 +179,7 @@
 }
 
 .IGPost-icons {
-    @include flexCenter(100%, row, center);
+    @include flex(100%, row, center, center, center);
     height: 60px;
 }
 

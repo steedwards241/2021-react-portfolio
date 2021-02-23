@@ -1,9 +1,9 @@
-@mixin flexCenter($width, $flexDirection, $textAlign) {
+@mixin flex($width, $flexDirection, $justifyContent, $alignItems, $textAlign) {
     width: $width;
     display: flex;
     flex-direction: $flexDirection;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
     text-align: $textAlign;
 }
 

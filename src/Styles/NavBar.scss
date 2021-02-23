@@ -1,16 +1,56 @@
 @import './Presets/Variables.scss';
 @import './Presets/Mixins.scss';
 
-.navbar-container {
-    @include flexCenter(100%, column, center);
+.navBar-wrapper {
+    font-family: $primaryFont;
 }
 
-.navbar-container ul {
-    @include flexCenter(80%, row, center);
+.navBar-header {
+    @include flex("", column, center, center, center);
 }
 
-.navbar-container li {
-    padding: 10px 20px;
-    border: solid 1px $primaryColor;
-    cursor: pointer;
+.navBar-header h1, h2, h4 {
+    margin: 8px;
+}
+
+.navBar-navigation {
+    @include flex("", row, center, "", center);
+}
+
+.navBar-container {
+    @include flex("", column, "", center, center);
+    padding: 75px 50px;
+}
+
+.navBar-links {
+    @include flex("", column, center, center, center);
+}
+
+.navBar-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+    background-color: white;
+    @include navBarTransition(0.5s);
+}
+
+#hm:hover {
+    background-color: lightskyblue;
+}
+
+#ig:hover {
+    background-color: transparent;
+}
+#nf:hover {
+    background-color: black;
+    color: red;
+}
+
+.navBar-links div {
+    background: linear-gradient(90deg, rgba(255,241,0,1) 0%, rgba(255,0,0,1) 50%, rgba(160,0,255,1) 100%);
+    height: 40px;
+    width: 94px;
+    @include flex("", "", center, center, center);
 }

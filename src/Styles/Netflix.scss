@@ -4,9 +4,9 @@
 //Netflix
 
 .netflix-container {
-    background-color: #141414;
     height: 120vh;
     margin: -30px -8px;
+    background-color: #141414;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -37,9 +37,9 @@
 }
 
 .netflix-navBar-link {
+    padding: 0px 10px;
     text-decoration: none;
     color: rgb(219, 219, 219);
-    padding: 0px 10px;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -75,9 +75,9 @@
 }
 
 .netflix-navBar-profile {
-    width: 20%;
     display: flex;
     align-items: center;
+    width: 20%;
 }
 
 .netflix-navBar-profile img {

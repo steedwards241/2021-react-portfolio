@@ -1,0 +1,26 @@
+@import './Presets/Mixins.scss';
+@import './Presets/Variables.scss';
+
+.form-wrapper {
+    @include flex(100%, column, center, center, center);
+    font-family: $primaryFont;
+}
+
+.form-container {
+    @include flex(40%, column, center, center, center);
+    border: solid 1px black;
+}
+
+.form-field {
+    @include flex("", column, center, center, center);
+    margin: 10px 0px;
+}
+
+.form-field textarea {
+    resize: none;
+    margin: 10px;
+}
+
+.form-button {
+    margin-bottom: 20px;
+}

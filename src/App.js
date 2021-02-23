@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from './Pages/NavBar';
 import Instagram from './Pages/Instagram';
 import Netflix from './Pages/Netflix';
-import Authentication from './Pages/Authentication';
+import Form from './Pages/Components/Form';
 
 const App = () => {
   return (
@@ -20,8 +20,8 @@ const App = () => {
           <Route path="/netflix">
             <Netflix />
           </Route>
-          <Route path="/login">
-            <Authentication />
+          <Route path="/components/form">
+            <Form />
           </Route>
         </Switch>
       </Router>
