@@ -47,6 +47,14 @@
 .navBar-links div {
     background: linear-gradient(90deg, rgba(255,241,0,1) 0%, rgba(255,0,0,1) 50%, rgba(160,0,255,1) 100%);
     height: 40px;
-    width: 94px;
+    width: 93px;
     @include flex("", "", center, center, center);
+}
+
+.navBar-info {
+    @include flex(100%, column, center, center, center);
+}
+
+.navBar-info p {
+    margin: 5px;
 }

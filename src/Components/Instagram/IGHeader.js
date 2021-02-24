@@ -7,7 +7,7 @@ const IGHeader = () => {
     return (
         <div className="header-container">
             <div className="header-logo-container">
-                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"></img>
+                <a href="https://reactportfoliostephenedwards.web.app/"><img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"></img></a>
             </div>
             <IGSearchBar />
             <IGNavBar />

@@ -20,6 +20,12 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
+            <div className="navBar-info">
+                <h2>Welcome to my React Portfolio</h2>
+                <p>All my 2021 projects will be hosted here.</p>
+                <p>Source code and updates can be found at: <a href="https://github.com/steedwards241/2021-react-portfolio">https://github.com/steedwards241/2021-react-portfolio</a></p>
+                <p>To return to this navigation page when visiting a mockup, click the corresponding logo e.g. the Instagram/Netflix logo</p>
+            </div>
         </div>
     )
 }
