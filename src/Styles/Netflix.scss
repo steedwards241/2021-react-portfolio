@@ -102,3 +102,101 @@
 .netflix-pages-content {
     color: lightgrey;
 }
+
+.netflix-pages-panel-container {
+    @include flex(100%, row, space-between, center, center);
+}
+
+
+
+//Netflix Panel
+
+.netflix-panel-container {
+    @include flex(100%, row, center, center, center);
+    margin-top: 200px;
+}
+
+.netflix-small-panel {
+    @include flex(230px, column, center, center, center);
+    color: black;
+    position: absolute;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.netflix-panel-container:hover > .netflix-small-panel {
+    opacity: 0;
+}
+
+.netflix-small-panel img {
+    width: 230px;
+    height: 128px;
+}
+
+.netflix-large-panel {
+    @include flex(350px, column, center, center, center);
+    background-color: #141414;
+    border-radius: 5px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.75);
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.5s;
+    z-index: 2;
+}
+
+.netflix-panel-container:hover > .netflix-large-panel {
+    opacity: 1;
+}
+
+.netflix-large-panel-image {
+    width: 100%;
+}
+
+.netflix-panel-buttons {
+    @include flex(100%, row, space-between, center, center);
+    height: 50px;
+}
+
+.netflix-panel-buttons img {
+    width: 30px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.netflix-panel-content {
+    width: 100%;
+    height: 100px;
+}
+
+.netflix-panel-content__top {
+    @include flex(100%, row, "", center, center);
+    margin-top: 5px;
+}
+
+.netflix-panel-content__top img{
+    width: 30px;
+}
+
+.netflix-panel-content__top p {
+    margin: 0px 10px;
+}
+
+.netflix-panel-content__top #match {
+    color: rgb(99, 185, 99);
+}
+
+.netflix-panel-content__bottom {
+    @include flex(100%, row, "", center, center);
+    margin: 15px 0px 0px 0px;
+}
+
+.netflix-panel-content__bottom img {
+    width: 10px;
+}
+
+.netflix-panel-content__bottom p {
+    margin: 0px 10px;
+}

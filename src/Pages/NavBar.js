@@ -19,18 +19,6 @@ const NavBar = () => {
                         <NavLink className="navBar-link" id="nf" to="/netflix">Netflix</NavLink>
                     </div>
                 </div>
-                <div className="navBar-container">
-                    <h1>Websites</h1>
-                    <div className="navBar-links">
-                        <NavLink className="navBar-link" id="hm" to="/instagram">Home</NavLink>
-                    </div>
-                </div>
-                <div className="navBar-container">
-                    <h1>Components</h1>
-                    <div className="navBar-links">
-                        <NavLink className="navBar-link" id="hm" to="/components/form">Form</NavLink>
-                    </div>
-                </div>
             </div>
         </div>
     )
