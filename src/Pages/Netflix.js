@@ -7,6 +7,7 @@ import NFSeries from '../Components/Netflix/NFSeries';
 import NFFilms from '../Components/Netflix/NFFilms';
 import NFPopular from '../Components/Netflix/NFPopular';
 import NFMyList from '../Components/Netflix/NFMyList';
+import NFFooter from '../Components/Netflix/NFFooter';
 
 import '../Styles/Netflix.scss';
 
@@ -32,6 +33,7 @@ const App = () => {
             <NFMyList />
           </Route>
         </Switch>
+        <NFFooter />
       </Router>
     </div>
   )

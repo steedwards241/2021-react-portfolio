@@ -15,6 +15,7 @@
 .netflix-navBar-container {
     @include netflixNavBar(transparent);
     @include navBarTransition(0.2s);
+    margin-top: 20px;
 }
 
 .netflix-navBar-container__scroll {
@@ -105,10 +106,19 @@
 
 .netflix-pages-content {
     color: lightgrey;
+    margin-top: -40px;
+    width: 90%;
+    margin-left: 50px;
 }
 
 .netflix-pages-panel-container {
     @include flex(100%, row, space-between, center, center);
+    margin-left: 20px;
+}
+
+.netflix-pages-panel-header {
+    margin: 100px 0px -120px 20px;
+    font-size: 18px;
 }
 
 
@@ -116,7 +126,7 @@
 //Netflix Panel
 
 .netflix-panel-container {
-    @include flex(100%, row, center, center, center);
+    @include flex(100%, row, space-between, center, center);
     margin-top: 200px;
 }
 
@@ -126,11 +136,7 @@
     position: absolute;
     opacity: 1;
     transition: 1s;
-    transition-delay: 0.5s;
-}
-
-.netflix-panel-container:hover > .netflix-small-panel {
-    opacity: 0;
+    transition-delay: 0.2s;
 }
 
 .netflix-small-panel img {
@@ -139,7 +145,7 @@
 }
 
 .netflix-large-panel {
-    @include flex(350px, column, center, center, center);
+    @include flex(300px, column, center, center, center);
     background-color: #141414;
     border-radius: 5px;
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.75);
@@ -147,8 +153,12 @@
     position: absolute;
     opacity: 0;
     transition: 1s;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
     z-index: 2;
+}
+
+.netflix-panel-container:hover > .netflix-small-panel {
+    opacity: 0;
 }
 
 .netflix-panel-container:hover > .netflix-large-panel {
@@ -203,4 +213,78 @@
 
 .netflix-panel-content__bottom p {
     margin: 0px 10px;
+}
+
+
+
+
+@media (max-width: 1350px) {
+    .netflix-small-panel {
+        @include flex(180px, column, center, center, center);
+        color: black;
+        position: absolute;
+        opacity: 1;
+        transition: 1s;
+        transition-delay: 0.2s;
+    }
+    
+    .netflix-small-panel img {
+        width: 180px;
+        height: 100px;
+    }
+    
+    .netflix-large-panel {
+        @include flex(250px, column, center, center, center);
+        background-color: #141414;
+        border-radius: 5px;
+        box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.75);
+        color: white;
+        position: absolute;
+        opacity: 0;
+        transition: 1s;
+        transition-delay: 0.2s;
+        z-index: 2;
+    }
+}
+
+
+
+//Footer
+
+.netflix-footer-container {
+    @include flex(100%, column, center, center, center);
+    margin-top: 100px;
+    font-size: 12px;
+    background-color: #141414;
+    color:rgb(219, 219, 219);
+}
+
+.netflix-footer-icons {
+    @include flex(100%, row, center, center, center);
+}
+
+.netflix-footer-icons img {
+    width: 3%;
+    margin: 0px 15px;
+}
+
+.netflix-footer-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+}
+
+.netflix-footer-content p {
+    margin: 5px 20px;
+    text-align: left;
+}
+
+.netflix-footer-service p {
+    border: solid 1px rgb(219, 219, 219);
+    padding: 10px;
+}
+
+.netflix-footer-service:hover {
+    color: white;
+    cursor: pointer;
 }

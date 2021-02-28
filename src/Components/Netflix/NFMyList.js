@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import NFPanel from './NFPanel';
 
 const NFMyList = () => {
     return (
@@ -8,9 +10,23 @@ const NFMyList = () => {
             </div>
             <div className="netflix-pages-content">
                 <h1>My List</h1>
+                <div className="netflix-pages-panel-container">
+                    <NFPanel />
+                    <NFPanel />
+                    <NFPanel />
+                    <NFPanel />
+                    <NFPanel />
+                </div>
+                <div className="netflix-pages-panel-container">
+                    <NFPanel />
+                    <NFPanel />
+                    <NFPanel />
+                    <NFPanel />
+                    <NFPanel />
+                </div>
             </div>
         </div>
     )
 }
 
-export default NFMyList
+export default NFMyList;

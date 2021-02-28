@@ -6,10 +6,10 @@ const NFPanel = (props) => {
     return (
         <div className="netflix-panel-container">
             <div className="netflix-small-panel">
-                <img src="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/full/public/2018/07/09/suits-season-8.jpeg" alt=""></img>
+                <img src={props.image} alt=""></img>
             </div>
             <div className="netflix-large-panel">
-                <img className="netflix-large-panel-image" src="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/full/public/2018/07/09/suits-season-8.jpeg" alt=""></img>
+                <img className="netflix-large-panel-image" src={props.image} alt=""></img>
                 <div className="netflix-panel-buttons">
                     <div className="netflix-panel-buttons__left">
                         <img src="https://www.flaticon.com/svg/vstatic/svg/482/482059.svg?token=exp=1614163625~hmac=0f1209c4332ff136f3b7b0f6107f8f61" alt=""></img>
@@ -23,16 +23,16 @@ const NFPanel = (props) => {
                 </div>
                 <div className="netflix-panel-content">
                     <div className="netflix-panel-content__top">
-                        <p id="match">97% match</p>
+                        <p id="match">{props.match}% match</p>
                         <img src="http://vector.gissen.nl/kijkwijzer-16.png" alt=""></img>
-                        <p>9 seasons</p>
+                        <p>{props.seasons} seasons</p>
                     </div>
                     <div className="netflix-panel-content__bottom">
-                        <p>Drama</p>
+                        <p>{props.description1}</p>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Location_dot_grey.svg/1024px-Location_dot_grey.svg.png" alt=""></img>
-                        <p>Exiting</p>
+                        <p>{props.description2}</p>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Location_dot_grey.svg/1024px-Location_dot_grey.svg.png" alt=""></img>
-                        <p>Thriller</p>
+                        <p>{props.description3}</p>
                     </div>
                 </div>
             </div>

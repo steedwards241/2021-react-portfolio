@@ -25,6 +25,8 @@ const NavBar = () => {
                 <p>All my 2021 projects will be hosted here.</p>
                 <p>Source code and updates can be found at: <a href="https://github.com/steedwards241/2021-react-portfolio">https://github.com/steedwards241/2021-react-portfolio</a></p>
                 <p>To return to this navigation page when visiting a mockup, click the corresponding logo e.g. the Instagram/Netflix logo</p>
+                <a href="https://oldreactportfolio2020.web.app/"><p>[Old React Portfolio]</p></a>
+                <a href="https://procrastinationender202008.firebaseapp.com/"><p>[Old React Project]</p></a>
             </div>
         </div>
     )

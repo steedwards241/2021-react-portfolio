@@ -32,7 +32,7 @@ const NavBar = () => {
     return (
         <div className={navClass}>
             <div className="netflix-navBar-left">
-                <a href="https://reactportfoliostephenedwards.web.app/" id="nav-link"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt=""></img></a>
+                <a href="https://reactportfoliostephenedwards.web.app/" id="nav-link"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="Netflix"></img></a>
                 <NavLink className="netflix-navBar-link" activeClassName="netflix-navBar-active" to="/netflix" exact>Home</NavLink>
                 <NavLink className="netflix-navBar-link" activeClassName="netflix-navBar-active" to="/netflix/series">Series</NavLink>
                 <NavLink className="netflix-navBar-link" activeClassName="netflix-navBar-active" to="/netflix/films">Films</NavLink>
