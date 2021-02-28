@@ -14,13 +14,14 @@
 
 .netflix-navBar-container {
     @include netflixNavBar(transparent);
-    @include navBarTransition(0.2s);
+    @include navBarTransition(0.1s);
     margin-top: 20px;
 }
 
 .netflix-navBar-container__scroll {
     @include netflixNavBar(#141414);
-    @include navBarTransition(0.2s);
+    @include navBarTransition(0.1s);
+    z-index: 2;
 }
 
 .netflix-navBar-left {
@@ -29,16 +30,12 @@
     width: 80%;
 }
 
-.netflix-navBar-container #nav-link {
-    width: 14%;
+.netflix-navBar-container #nav-link img {
+    width: 130px;
 }
 
-.netflix-navBar-container img {
-    width: 100%;
-}
-
-.netflix-navBar-container__scroll img {
-    width: 14%;
+.netflix-navBar-container__scroll #nav-link img {
+    width: 130px;
 }
 
 .netflix-navBar-link {
