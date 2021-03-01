@@ -2,11 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import NavBar from '../Components/Netflix/NFNavBar';
-import NFHome from '../Components/Netflix/NFHome';
-import NFSeries from '../Components/Netflix/NFSeries';
-import NFFilms from '../Components/Netflix/NFFilms';
-import NFPopular from '../Components/Netflix/NFPopular';
-import NFMyList from '../Components/Netflix/NFMyList';
+import NFPage from '../Components/Netflix/NFPage';
 import NFFooter from '../Components/Netflix/NFFooter';
 
 import '../Styles/Netflix.scss';
@@ -18,19 +14,19 @@ const App = () => {
         <NavBar />
         <Switch>
           <Route path="/netflix" exact>
-            <NFHome />
+            <NFPage pageTitle="" />
           </Route>
           <Route path="/netflix/series">
-            <NFSeries />
+          <NFPage pageTitle="Series" />
           </Route>
           <Route path="/netflix/films">
-            <NFFilms />
+          <NFPage pageTitle="Films" />
           </Route>
           <Route path="/netflix/popular">
-            <NFPopular />
+          <NFPage pageTitle="Popular" />
           </Route>
           <Route path="/netflix/mylist">
-            <NFMyList />
+          <NFPage pageTitle="My List" />
           </Route>
         </Switch>
         <NFFooter />

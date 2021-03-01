@@ -4,14 +4,14 @@ import NFPanel from './NFPanel';
 
 import '../../Styles/Netflix.scss'
 
-const NFHome = () => {
+const NFHome = (props) => {
     return (
         <div className="netflix-pages-container">
             <div className="netflix-pages-header">
 
             </div>
             <div className="netflix-pages-content">
-                <h1 className="netflix-pages-panel-header">My List</h1>
+                <h1 className="netflix-pages-panel-header">{props.pageTitle}</h1>
                 <div className="netflix-pages-panel-container">
                     <NFPanel 
                         match="96" seasons="9" description1="Drama" description2="Exciting" description3="Thriller"
